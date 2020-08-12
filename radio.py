@@ -5,7 +5,7 @@ import subprocess
 PATH = "/media/pi/"
 
 sub_dirs = subprocess.getoutput("ls " + PATH)
-print(sub_dirs.split())
+print(sub_dirs.split("\n"))
 
 if("MUSIC" in sub_dirs):
     MEDIA_DIR = "MUSIC"
