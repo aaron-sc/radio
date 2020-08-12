@@ -4,6 +4,8 @@ import glob, os
 PATH = "/media/pi/"
 sub_dirs = os.walk(PATH)
 
+print(sub_dirs)
+
 if("MUSIC" in sub_dirs):
     MEDIA_DIR = ""
     playlist = []
