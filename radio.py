@@ -1,12 +1,10 @@
 import sys
 import glob, os
+import subprocess
 
 PATH = "/media/pi/"
 
-sub_dirs = []
-for dirs in os.walk(PATH):
-    sub_dirs.append(dirs)
-    
+sub_dirs = subprocess.getoutput("ls " + PATH)
 print(sub_dirs)
 
 if("MUSIC" in sub_dirs):
