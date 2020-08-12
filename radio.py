@@ -1,7 +1,7 @@
 import sys
 import glob, os
 
-PATH = "/media/pi/MUSIC"
+PATH = "/media/pi/MUSIC/"
 playlist = []
 
 os.chdir(PATH)
