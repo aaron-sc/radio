@@ -2,11 +2,11 @@ import sys
 import glob, os
 
 PATH = "/media/pi/MUSIC"
-music_files = []
+playlist = []
 
-os.chdir(path)
+os.chdir(PATH)
 
 for file in glob.glob("*.mp3"):
-    music_files.append(file)
+    playlist.append(PATH + str(file))
 
-print(music_files)
+print(playlist)
