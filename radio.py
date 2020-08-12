@@ -10,7 +10,7 @@ if("MUSIC" in sub_dirs):
     MEDIA_DIR = "MUSIC"
     playlist = []
     PATH = PATH + MEDIA_DIR + "/"
-    os.chdir(PATH+MEDIA_DIR)
+    os.chdir(PATH)
 
     for file in glob.glob("*.mp3"):
         playlist.append(PATH + str(file))
