@@ -9,7 +9,7 @@ sub_dirs = subprocess.getoutput("ls " + PATH).split("\n")
 if("MUSIC" in sub_dirs):
     MEDIA_DIR = "MUSIC"
     playlist = []
-
+    PATH = PATH + MEDIA_DIR + "/"
     os.chdir(PATH+MEDIA_DIR)
 
     for file in glob.glob("*.mp3"):
