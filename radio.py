@@ -1,12 +1,18 @@
 import sys
 import glob, os
 
-PATH = "/media/pi/MUSIC/"
-playlist = []
+PATH = "/media/pi/"
+sub_dirs = os.walk(PATH)
 
-os.chdir(PATH)
+if("MUSIC" in sub_dirs):
+    MEDIA_DIR = ""
+    playlist = []
 
-for file in glob.glob("*.mp3"):
-    playlist.append(PATH + str(file))
+    os.chdir(PATH)
 
-print(playlist)
+    for file in glob.glob("*.mp3"):
+        playlist.append(PATH + str(file))
+
+    print(playlist)
+else:
+    print("USB DEVICE NOT FOUND")
