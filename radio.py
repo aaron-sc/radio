@@ -2,8 +2,11 @@ import sys
 import glob, os
 
 PATH = "/media/pi/"
-sub_dirs = os.walk(PATH)
 
+sub_dirs = []
+for dirs in os.walk(PATH):
+    sub_dirs.append(dirs)
+    
 print(sub_dirs)
 
 if("MUSIC" in sub_dirs):
