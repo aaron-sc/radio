@@ -19,7 +19,7 @@ if("MUSIC" in sub_dirs):
     PATH = PATH + MEDIA_DIR + "/"
     os.chdir(PATH)
 
-    for file in glob.glob("*.wav"):
+    for file in glob.glob("*.mp3"):
         playlist.append(PATH + str(file))
 
     random.shuffle(playlist)
