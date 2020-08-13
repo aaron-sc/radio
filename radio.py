@@ -3,6 +3,8 @@ import glob, os
 import subprocess
 import random
 
+# https://pimylifeup.com/raspberry-pi-pirate-radio/
+
 FRQ = "108.0"
 command = ""
 
