@@ -30,6 +30,7 @@ if("MUSIC" in sub_dirs):
 
     print("PLAYING MUSIC")
 
-    print(command)
+    os.system(command)
+
 else:
     print("USB DEVICE NOT FOUND")
